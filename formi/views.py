@@ -18,4 +18,5 @@ def submit(request):
         return render(request,'index.html')
 
 def showData(request):
-    return render(request, 'sucess.html')
+    x=sample_collection.objects.filter(data='abc')
+    return render(request, 'sucess.html', {'val':x})
