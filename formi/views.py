@@ -22,4 +22,4 @@ def submit(request):
 
 def showData(request):
     x=collection.count_documents({})
-    return render(request, 'sucess.html', {'val':x})
+    return render(request, 'sucess.html', {'count':x})
