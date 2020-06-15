@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple</title>
+</head>
+<body>
+    <form method="GET" action="submit">
+    {% csrf_token %}
+    Enter your name:</br><input type="text" name='name1' required>
+</br><input type="submit">
+</form>
+<form action="showData">
+    {% csrf_token %}
+</br><input type="button" value= "showData" name="showData">
+</form>
+</body>
+</html>
